@@ -1,0 +1,17 @@
+use bca_students;
+create table bsc(roll_no int primary key,name varchar(25) not null,age int check(age>=18), mark int,gender varchar(20) default "female");
+describe bsc;
+insert into bsc values(1,"adhi",20,70,"female");
+insert into bsc values(2,"ilyas",20,80,"male");
+insert into bsc values(3,null,20,70,"female");
+insert into bsc values(4,"rizwan",20,70,"male");
+insert into bsc (roll_no,name,age,mark) values(5,"fida",20,70);
+select* from bsc;
+insert into bsc values(7,"adhira",20,70,"female");
+insert into bsc values(11,"aju",20,70,"female");
+insert into bsc values(12,"adhi",16,70,"female");
+select* from bsc;
+select * from bsc order by name;
+insert into bsc values(15,"adhi",20,70,"female");
+select distinct name from bsc;
+select * from bsc;

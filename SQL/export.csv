@@ -1,0 +1,6 @@
+Emp_ID,Emp_Name,Dept_ID,Salary
+1,Alice,101,70000
+2,Bob,102,85000
+3,Charlie,101,60000
+4,David,103,90000
+5,Eve,NULL,75000

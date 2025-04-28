@@ -1,0 +1,13 @@
+use corpus;
+create table  stud5(id int,name varchar(10),cid int);
+insert into stud5 values(1,'a',1),(2,'b',1),(3,'c',3);
+insert into stud5 values(4,'d',4);
+truncate stud5;
+select * from stud5;
+create table  course(id int,name varchar(10),fees int);
+insert into course values(1,'ds',1000000),(2,'da',310000),(3,'cma',30000);
+select * from course;
+select stud5.name as student_name,course.name as course_name from stud5 inner join course on stud5.cid= course.id;
+select stud5.name,course.name from stud5 left join course on stud5.cid=course.id;
+select stud5.name,course.name from stud5 right join course on stud5.cid=course.id;
+select stud5.name,course.name from stud5 full join course on stud5.cid=course.id;

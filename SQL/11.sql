@@ -1,0 +1,17 @@
+create table student_a(student_id int,name varchar(20));
+insert into student_a values(1,'ilyas'),(2,'abu'),(3,'aju');
+create table student_b(student_id int,name varchar(20));
+insert into student_b values(11,'ilyas'),(12,'abu'),(13,'aju');
+insert into student_a values(4,'arun'),(5,'abdula'),(6,'ajumal');
+insert into student_b values(4,'arun'),(5,'abdula'),(16,'ajumal');create table student_A (student_id int,name varchar(20));
+insert into student_A values(1,"Alice"),(2,"Bob"),(3,"Charlie"),(4,"David"),(5,"Emma");
+create table student_B(student_id int,name varchar(20));
+insert into student_B values(3,"charlie"),(4,"david"),(5,"emma"),(6,"frank");
+describe  student_A;
+describe student_B;
+select * from student_A union select * from student_B;
+select * from student_A union all select * from student_B;
+select * from student_A inner join student_B on student_A.student_id = student_B.student_id;
+select * from student_A left join student_B on student_A.student_id = student_B.student_id where student_B.student_id is null;
+select * from student_B left join student_A on student_B.student_id = student_A.student_id where student_A.student_id is null;
+select * from student_a union select* from student_b;
